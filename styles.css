@@ -87,8 +87,21 @@
   --font-size-tableheading: 1.2em;
 }
 
+/* A5 Page */
+.a5page {
+    /* overflow: scroll; */
+    font-family: var(--font-text);
+    height: 148mm;
+    width: 210mm;
+    margin:  0px auto 0px auto;
+    padding: 5mm;
+    box-sizing: border-box;
+    background-color: var(--background);
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+    border: solid 2px var(--primary);
+}
 /* A4 Page */
-.page {
+.a4page {
     /* overflow: scroll; */
     font-family: var(--font-text);
     width: 210mm;
