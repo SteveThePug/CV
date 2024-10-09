@@ -1,9 +1,3 @@
-/* Printing */
-@media print {
-    .page {
-        margin: 0px;
-    }
-}
 /* Fonts */
 @font-face {
     font-family: 'AldoTheApache'; 
