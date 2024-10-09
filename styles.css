@@ -93,7 +93,6 @@
     font-family: var(--font-text);
     height: 148mm;
     width: 210mm;
-    margin:  0px auto 0px auto;
     padding: 5mm;
     box-sizing: border-box;
     background-color: var(--background);
@@ -106,7 +105,6 @@
     font-family: var(--font-text);
     width: 210mm;
     height: 297mm;
-    margin:  0px auto 0px auto;
     padding: 5mm;
     box-sizing: border-box;
     background-color: var(--background);
@@ -115,6 +113,10 @@
 }
 /* Component Styling */
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -157,7 +159,39 @@ th {
     background-color: var(--quaternary);
     text-align: left;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover,
+a:visited {
+    color: inherit;
+}
 /* Classes */
+/* Cover Navigation (for ease of use) */
+.cover-nav {
+    position: fixed;
+    top: 0.5vh;  /* Position the element at the top of the screen */
+    left: 80vw; /* Position the element at the left of the screen */
+    border: 2px solid var(--tertiary);
+    width: 19.5vw; /* Make the element span the width of the screen (optional) */
+    background-color: var(--background); /* Set a background color to avoid overlap issues */
+    z-index: 1000; /* Ensures the element is above other content */
+}
+.cover-nav td, tr {
+    font-family: var(--font-text);
+    border: 0;
+}
+.cover-nav th {
+    text-align: center;
+    align-items: center;
+    border-bottom:2px solid var(--tertiary);
+}
+@media print {
+  .cover-nav {
+    display: none;
+  }
+}
 /* Contact At Top of Page */
 .contact {
     display: flex;
