@@ -84,6 +84,8 @@
 /* A5 Page */
 .a5page {
     /* overflow: scroll; */
+    display:flex;
+    flex-direction: column;
     font-family: var(--font-text);
     height: 148mm;
     width: 210mm;
@@ -114,14 +116,6 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-}
-textarea {
-    width:100%;
-    height: 60%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 2px solid var(--primary);
-    resize: none;
 }
 h1, h2, h3, h4 {
     color: var(--primary);
@@ -193,6 +187,16 @@ a:visited {
   .cover-nav {
     display: none;
   }
+}
+/* Cover letter styling */
+textarea {
+    width:100%;
+    height:100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 0px solid var(--primary);
+    resize: none;
+    font-family: var(--font-text);
 }
 /* Contact At Top of Page */
 .contact {
